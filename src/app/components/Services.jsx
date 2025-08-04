@@ -23,7 +23,7 @@ const Slideshow = ({ images, alt }) => {
   };
 
   return (
-    <div className="relative mb-6 rounded overflow-hidden shadow-md">
+    <div className="relative mb-6 rounded overflow-hidden shadow-md -mx-10">
       <img
         src={images[currentIndex]}
         alt={`${alt} ${currentIndex + 1}`}
@@ -81,24 +81,22 @@ const Services = () => {
 
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {/* Service 1 */}
-        <div className="bg-gray-800 p-10 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-700 cursor-pointer">
+        <div className="bg-gray-800 pt-0 px-10 pb-10 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-700 cursor-pointer">
           <Slideshow images={headDraftingImages} alt="Head Drafting" />
           <h4 className="text-3xl font-bold mb-4 text-white">Head Drafting</h4>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Detailed 2D drafting services for structural and architectural
-            plans. Accurate, clear, and professionally formatted.
+            Detailed 2D drafting services for structural and architectural plans. Accurate, clear, and professionally formatted.
           </p>
         </div>
 
         {/* Service 2 */}
-        <div className="bg-gray-800 p-10 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-700 cursor-pointer">
+        <div className="bg-gray-800 pt-0 px-10 pb-10 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-700 cursor-pointer">
           <Slideshow images={modelingImages} alt="3D Modeling & Visualizing" />
           <h4 className="text-3xl font-bold mb-4 text-white">
             3D Modeling & Visualizing
           </h4>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Realistic 3D models and visualizations to bring your concepts to
-            life. Ideal for presentations, planning, and simulations.
+            Realistic 3D models and visualizations to bring your concepts to life. Ideal for presentations, planning, and simulations.
           </p>
         </div>
       </div>

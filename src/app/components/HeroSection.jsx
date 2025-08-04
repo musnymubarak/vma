@@ -15,13 +15,21 @@ const HeroSection = () => {
         priority
       />
 
-      {/* Overlay with button */}
-      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
+      {/* Overlay with text and button */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 space-y-6 px-6 text-center">
+        <p className="text-white font-semibold leading-snug max-w-3xl">
+          <span className="block text-2xl sm:text-5xl">
+            Embrace your ambitions with unwavering determination;
+          </span>
+          <span className="block text-xl sm:text-3xl mt-2">
+            for me, this stands as the ultimate path forward.
+          </span>
+        </p>
         <Link
           href="/#contact"
-          className="px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 rounded-full hover:from-green-500 hover:to-purple-700 transition duration-300"
+          className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#14232b] rounded-full hover:bg-[#1e323d] transition duration-300"
         >
-          Hire Me
+          Start Your Project
         </Link>
       </div>
     </section>
