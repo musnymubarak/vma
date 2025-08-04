@@ -1,32 +1,26 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const NavLink = ({ href, title }) => {
   const [isActive, setIsActive] = useState(false);
 
+  // Track current hash in URL
   useEffect(() => {
     const handleScroll = () => {
       const section = document.querySelector(href);
       if (section) {
-        const rect = section.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
-        const sectionMiddle = rect.top + (rect.height / 2);
-        
-        // Check if section's middle point is in the viewport
-        const isSectionActive = sectionMiddle > 0 && sectionMiddle < viewportHeight;
-        
-        if (href === "#contact") {
-          // For last section, activate once top is reached
-          setIsActive(rect.top <= viewportHeight * 0.5);
-        } else {
-          setIsActive(isSectionActive);
-        }
+        const top = section.offsetTop - 120; // offset for navbar height
+        const bottom = top + section.offsetHeight;
+        const scrollY = window.scrollY;
+
+        setIsActive(scrollY  >= top && scrollY < bottom);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // run on mount
+    handleScroll(); // Call on load
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [href]);
