@@ -1,49 +1,35 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image"; // Import Image correctly
+import Image from "next/image";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
-  {
-    title: "About",
-    path: "#about",
-  },
-   {
-    title: "Team",
-    path: "#team",
-  },
-  {
-    title: "Services",
-    path: "#services",
-  },
-  {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
-  },
+  { title: "About", path: "#about" },
+  { title: "Team", path: "#team" },
+  { title: "Services", path: "#services" },
+  { title: "Projects", path: "#projects" },
+  { title: "Contact", path: "#contact" },
 ];
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#263039] bg-opacity-100">
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#263039] bg-opacity-100 border border-[#33353F]">
+      <div className="flex container items-center justify-between mx-auto px-4 py-1">
         <Link href={"/"} className="flex items-center">
-          <Image 
-            src="/images/lg.png" 
-            alt="Logo" 
-            width={100} 
-            height={100} 
-            className="w-24 h-auto" // Adjust width and height as needed
+          <Image
+            src="/images/lg.png"
+            alt="Logo"
+            width={120}
+            height={120}
+            className="w-28 h-auto" // Moderate size
           />
         </Link>
+
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -61,8 +47,9 @@ const Navbar = () => {
             </button>
           )}
         </div>
+
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex p-2 md:p-0 md:flex-row md:space-x-6">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
