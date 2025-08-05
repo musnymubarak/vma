@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="footer border-t border-[#33353F] text-white bg-[#121212]">
+    <footer className="footer border-t border-[#33353F] text-white bg-[#263039]">
       <div className="container mx-auto p-6 flex flex-col items-center justify-center text-center">
         <Link href={"/"} className="flex items-center justify-center">
           <Image 

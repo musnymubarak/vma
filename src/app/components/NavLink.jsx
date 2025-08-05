@@ -1,26 +1,25 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const NavLink = ({ href, title }) => {
   const [isActive, setIsActive] = useState(false);
 
-  // Track current hash in URL
   useEffect(() => {
     const handleScroll = () => {
       const section = document.querySelector(href);
       if (section) {
-        const top = section.offsetTop - 120; // offset for navbar height
+        const navbarOffset = 120; // Same as scroll-mt-[120px]
+        const top = section.offsetTop;
         const bottom = top + section.offsetHeight;
-        const scrollY = window.scrollY;
+        const scrollY = window.scrollY + navbarOffset; // <-- Important change
 
-        setIsActive(scrollY  >= top && scrollY < bottom);
+        setIsActive(scrollY >= top && scrollY < bottom);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call on load
+    handleScroll(); // Run once on load
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [href]);

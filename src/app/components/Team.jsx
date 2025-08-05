@@ -22,12 +22,12 @@ const Team = () => {
   ];
 
   return (
-    <section className="text-white py-20 px-6 xl:px-24" id="team">
+    <section className="text-white py-20 px-6 xl:px-24 " id="team">
       {/* Heading */}
       <p className="text-sm uppercase tracking-widest text-gray-400 mb-1">
         Meet the team
       </p>
-      <h2 className="text-2xl sm:text-3xl font-semibold text-[#e2b63d] mb-10">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-[#f0b41c] mb-10">
         Farsath Abdullah <span className="text-sm text-gray-400">SEO | RDT</span>
       </h2>
 
@@ -71,7 +71,7 @@ const Team = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
         {members.map((member, index) => (
           <div key={index} className="flex flex-col items-center justify-center">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#e2b63d] mb-4 shadow-md">
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#f0b41c] mb-4 shadow-md">
               <Image
                 src={member.image}
                 alt={member.name}

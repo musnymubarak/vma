@@ -15,23 +15,38 @@ export default function Home() {
       {/* Hero section full width, no wrapper padding */}
       <HeroSection />
 
-      <section className="bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full">
+      <section
+        id="about"
+        className="scroll-mt-[120px] bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full"
+      >
         <AboutMe />
       </section>
 
-      <section className="bg-[#484c54] rounded-none py-12 px-8 lg:py-16 lg:px-12 w-full">
+      <section
+        id="team"
+        className="scroll-mt-[120px] bg-[#263039] rounded-none py-12 px-8 lg:py-16 lg:px-12 w-full"
+      >
         <Team />
       </section>
 
-      <section className="bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full">
+      <section
+        id="services"
+        className="scroll-mt-[120px] bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full"
+      >
         <Services />
       </section>
 
-      <section className="bg-[#484c54] rounded-none py-12 px-8 lg:py-16 lg:px-12 w-full">
+      <section
+        id="projects"
+        className="scroll-mt-[120px] bg-[#263039] rounded-none py-12 px-8 lg:py-16 lg:px-12 w-full"
+      >
         <Projects />
       </section>
 
-      <section className="bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full">
+      <section
+        id="contact"
+        className="scroll-mt-[120px] bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full"
+      >
         <EmailSection />
       </section>
 

@@ -1,75 +1,53 @@
 "use client";
-import React, { useTransition, useState } from "react";
-import Image from "next/image";
-import TabButton from "./TabButton";
-
-const TAB_DATA = [
-    {
-        title: "Skills",
-        id: "skills",
-        content: (
-            <div className="flex flex-wrap gap-4">
-                <span className="bg-gray-800 px-3 py-1 rounded-full">Node.js</span>
-                <span className="bg-gray-800 px-3 py-1 rounded-full">Express</span>
-                <span className="bg-gray-800 px-3 py-1 rounded-full">PHP</span>
-                <span className="bg-gray-800 px-3 py-1 rounded-full">SQL & No SQL</span>
-                <span className="bg-gray-800 px-3 py-1 rounded-full">JavaScript</span>
-                <span className="bg-gray-800 px-3 py-1 rounded-full">React</span>
-            </div>
-        ),
-    },
-    {
-        title: "Education",
-        id: "education",
-        content: (
-            <ul className="list-disc pl-2">
-                <p>Bsc IT(R) University of Jaffna | 2022 – 2025</p>
-            </ul>
-        ),
-    },
-    {
-        title: "Certifications",
-        id: "certifications",
-        content: (
-            <ul className="list-disc pl-2">
-                <li><a href="https://www.credly.com/badges/095ef3fa-e5ac-492a-acca-a3753e04812c/linked_in_profile">Meta Full-Stack Engineer</a></li>
-                <li>Google Garager</li>
-                <li>IEEE Xtreame Participation</li>
-            </ul>
-        ),
-    },
-];
+import React from "react";
 
 const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
-    const [isPending, startTransition] = useTransition();
+  return (
+    <section className=" text-white py-20 px-6 xl:px-24" id="about">
+      {/* Top Line */}
+      <p className="text-sm text-[#f0b41c] font-medium uppercase mb-2">
+        Accurate. Creative. Professional.
+      </p>
 
-    const handleTabChange = (id) => {
-        startTransition(() => {
-            setTab(id);
-        });
-    };
-
-    return (
-        <section className="text-white" id="about">
-             <h3
-        className="text-5xl font-extrabold mb-12 text-center"
-        style={{ color: "#484c54" }}
-      >
-       About Us
-        <span
-          className="block mx-auto mt-3"
-          style={{
-            width: "100px",
-            height: "5px",
-            backgroundColor: "#e2b63d",
-            borderRadius: "3px",
-          }}
-        />
+      {/* Heading */}
+      <h3 className="text-3xl sm:text-4xl font-bold text-[#f0b41c] mb-8">
+        Designing the Future, Honoring the Past
       </h3>
-        
-        </section>
-    );
+
+      {/* Grid Layout for Two Columns */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10" style={{ color: '#263039' }}>
+        {/* Left Column */}
+        <div>
+          <p className="mb-4 leading-relaxed">
+            At VMA Studio, we transform ideas into precision-driven designs.
+            Since 2016, we’ve been a trusted global partner in drafting and
+            architectural visualization, delivering high-quality design
+            documentation and photorealistic visuals that bring concepts to life.
+          </p>
+          <p className="leading-relaxed">
+            From new constructions to evaluations of existing structures and
+            rehabilitation of aging buildings, our work spans across diverse
+            sectors—including commercial, residential, educational, and
+            hospitality developments.
+          </p>
+        </div>
+
+        {/* Right Column */}
+        <div>
+          <p className="mb-4 leading-relaxed">
+            What sets us apart? Our collaborative approach. We work hand-in-hand
+            with architects, structural engineers, real estate agencies, and
+            other industry professionals to ensure every project is coordinated,
+            efficient, and competitively priced.
+          </p>
+          <p className="leading-relaxed">
+            With a deep commitment to design excellence and practical solutions,
+            VMA Studio bridges creativity with constructibility—worldwide.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default AboutSection;

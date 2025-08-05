@@ -64,15 +64,15 @@ const EmailSection = () => {
       <div className="z-10 space-y-6">
         <h6 className="text-3xl text-white font-bold text-center">What People Say</h6>
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="bg-[#484c54] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
+          <div className="bg-[#263039] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
             &ldquo;Musny is a highly motivated developer. He approached our project with outstanding clarity and exceeded all expectations. His ability to simplify complex problems made a huge impact on our team.&rdquo;
             <div className="mt-4 text-right text-sm" style={{ color: '#e2b63d' }}>— Alex T., Senior Product Manager</div>
           </div>
-          <div className="bg-[#484c54] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
+          <div className="bg-[#263039] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
             &ldquo;Great communicator and a phenomenal coder. It&apos;s rare to find someone who&apos;s both technically skilled and an excellent collaborator. Musny is definitely someone I would work with again.&rdquo;
             <div className="mt-4 text-right text-sm" style={{ color: '#e2b63d' }}>— Priya S., Tech Lead</div>
           </div>
-          <div className="bg-[#484c54] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
+          <div className="bg-[#263039] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
             &ldquo;Delivered pixel-perfect work with attention to detail that&apos;s hard to find. The results were not only beautiful but functionally robust. Truly a professional at every step.&rdquo;
             <div className="mt-4 text-right text-sm" style={{ color: '#e2b63d' }}>— Jordan M., UX Designer</div>
           </div>
@@ -112,7 +112,7 @@ const EmailSection = () => {
                   type="email"
                   id="email"
                   required
-                  className="bg-[#484c54] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#263039] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Your email"
                 />
               </div>
@@ -122,7 +122,7 @@ const EmailSection = () => {
                   type="text"
                   id="subject"
                   required
-                  className="bg-[#484c54] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#263039] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Subject"
                 />
               </div>
@@ -132,13 +132,13 @@ const EmailSection = () => {
                   id="message"
                   required
                   rows={5}
-                  className="bg-[#484c54] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#263039] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Message"
                 />
               </div>
               <button
                 type="submit"
-                className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#484c54] rounded-full hover:bg-[#1e323d] transition duration-300"
+                className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#263039] rounded-full hover:bg-[#1e323d] transition duration-300"
               >
                 Send Message
               </button>
