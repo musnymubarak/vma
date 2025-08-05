@@ -27,7 +27,7 @@ const HeroSection = () => {
         </p>
         <Link
           href="/#contact"
-          className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#14232b] rounded-full hover:bg-[#1e323d] transition duration-300"
+          className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#484c54] rounded-full hover:bg-[#1e323d] transition duration-300"
         >
           Start Your Project
         </Link>

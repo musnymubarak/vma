@@ -112,7 +112,7 @@ const EmailSection = () => {
                   type="email"
                   id="email"
                   required
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#484c54] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Your email"
                 />
               </div>
@@ -122,7 +122,7 @@ const EmailSection = () => {
                   type="text"
                   id="subject"
                   required
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#484c54] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Subject"
                 />
               </div>
@@ -132,13 +132,13 @@ const EmailSection = () => {
                   id="message"
                   required
                   rows={5}
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                  className="bg-[#484c54] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                   placeholder="Message"
                 />
               </div>
               <button
                 type="submit"
-                className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#14232b] rounded-full hover:bg-[#1e323d] transition duration-300"
+                className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#484c54] rounded-full hover:bg-[#1e323d] transition duration-300"
               >
                 Send Message
               </button>
