@@ -41,7 +41,6 @@ const EmailSection = () => {
 
   return (
     <section id="contact" className="py-0 px-6 xl:px-20 relative">
-
       <h3
         className="text-5xl font-extrabold mb-08 text-center"
         style={{ color: "#484c54" }}
@@ -57,6 +56,7 @@ const EmailSection = () => {
           }}
         />
       </h3>
+
       {/* Background Blur */}
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 -z-10 blur-lg absolute top-1/2 left-0 transform -translate-y-1/2 opacity-30" />
 
@@ -65,21 +65,21 @@ const EmailSection = () => {
         <h6 className="text-3xl text-white font-bold text-center">What People Say</h6>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-[#484c54] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
-            "Musny is a highly motivated developer. He approached our project with outstanding clarity and exceeded all expectations. His ability to simplify complex problems made a huge impact on our team."
+            &ldquo;Musny is a highly motivated developer. He approached our project with outstanding clarity and exceeded all expectations. His ability to simplify complex problems made a huge impact on our team.&rdquo;
             <div className="mt-4 text-right text-sm" style={{ color: '#e2b63d' }}>— Alex T., Senior Product Manager</div>
           </div>
           <div className="bg-[#484c54] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
-            "Great communicator and a phenomenal coder. It's rare to find someone who's both technically skilled and an excellent collaborator. Musny is definitely someone I would work with again."
+            &ldquo;Great communicator and a phenomenal coder. It&apos;s rare to find someone who&apos;s both technically skilled and an excellent collaborator. Musny is definitely someone I would work with again.&rdquo;
             <div className="mt-4 text-right text-sm" style={{ color: '#e2b63d' }}>— Priya S., Tech Lead</div>
           </div>
           <div className="bg-[#484c54] p-6 rounded-xl shadow-lg text-base text-[#D1D5DB] min-h-[240px]">
-            "Delivered pixel-perfect work with attention to detail that's hard to find. The results were not only beautiful but functionally robust. Truly a professional at every step."
+            &ldquo;Delivered pixel-perfect work with attention to detail that&apos;s hard to find. The results were not only beautiful but functionally robust. Truly a professional at every step.&rdquo;
             <div className="mt-4 text-right text-sm" style={{ color: '#e2b63d' }}>— Jordan M., UX Designer</div>
           </div>
         </div>
       </div>
 
-      {/* Contact Section - with margin top */}
+      {/* Contact Section */}
       <div className="grid md:grid-cols-2 gap-6 z-10 mt-16">
         {/* Left Side */}
         <div>
