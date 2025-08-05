@@ -138,7 +138,7 @@ const EmailSection = () => {
               </div>
               <button
                 type="submit"
-                className="px-6 inline-block py-3 w-full sm:w-fit rounded-full bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 hover:bg-gradient-to-l text-white transition duration-300"
+                className="px-6 py-3 text-lg font-semibold text-[#e2b63d] bg-[#14232b] rounded-full hover:bg-[#1e323d] transition duration-300"
               >
                 Send Message
               </button>
