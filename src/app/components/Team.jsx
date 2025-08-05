@@ -2,73 +2,88 @@
 import React from "react";
 import Image from "next/image";
 
-const teamMembers = [
-  {
-    name: "Musny Mubarak",
-    role: "CEO & Full Stack Developer",
-    image: "/images/CEO.WEBP",
-    description:
-      "I specialize in full-stack web development with 1+ year experience in MERN stack, WordPress, and database management. I lead our team with a passion for creating engaging digital solutions.",
-  },
-  {
-    name: "John Doe",
-    role: "Frontend Developer",
-    image: "/images/Mem1.png",
-  },
-  {
-    name: "Jane Smith",
-    role: "Backend Developer",
-    image: "/images/Mem1.png",
-  },
-  {
-    name: "Alex Lee",
-    role: "UI/UX Designer",
-    image: "/images/Mem1.png",
-  },
-];
-
 const Team = () => {
-  return (
-    <section className="text-white py-16 px-4" id="team">
-      <div className="max-w-6xl mx-auto">
-        {/* CEO Section */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-16 md:items-start">
-          {/* Text on the left */}
-          <div className="w-full md:w-1/2 text-left">
-            <h2 className="text-4xl font-bold mb-4">{teamMembers[0].name}</h2>
-            <h3 className="text-xl font-semibold mb-2">{teamMembers[0].role}</h3>
-            <p className="text-base lg:text-lg">{teamMembers[0].description}</p>
-          </div>
+  const members = [
+    {
+      name: "Musny Mubarak",
+      title: "Executive Assistant",
+      image: "/images/team/musny.jpg",
+    },
+    {
+      name: "Shameer Cafoor",
+      title: "Senior Drafter",
+      image: "/images/team/shameer.jpg",
+    },
+    {
+      name: "Afsan Siyath",
+      title: "Draftsman",
+      image: "/images/team/afsan.jpg",
+    },
+  ];
 
-          {/* Image on the right */}
-          <div className="w-full md:w-1/2 flex justify-end">
-            <Image
-              src={teamMembers[0].image}
-              width={350}
-              height={350}
-              alt={teamMembers[0].name}
-              className="rounded-xl object-cover"
-            />
-          </div>
+  return (
+    <section className="text-white py-20 px-6 xl:px-24" id="team">
+      {/* Heading */}
+      <p className="text-sm uppercase tracking-widest text-gray-400 mb-1">
+        Meet the team
+      </p>
+      <h2 className="text-2xl sm:text-3xl font-semibold text-[#e2b63d] mb-10">
+        Farsath Abdullah <span className="text-sm text-gray-400">SEO | RDT</span>
+      </h2>
+
+      {/* Bio and Image */}
+      <div className="flex flex-col md:flex-row items-start gap-10 mb-16">
+        <div className="flex-1">
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Farsath Abdullah brings over 9 years of professional experience in CAD Drafting,
+            Architectural Visualization, Construction Documentation, and Building Code
+            Compliance. His project background spans architectural, MEP, and structural
+            drafting for new construction, existing structure evaluations, and building
+            rehabilitations.
+          </p>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Farsath has contributed to a wide range of sectors, including commercial,
+            residential, educational, and hospitality projects, delivering precise and
+            code-compliant drawings that support design excellence and buildability.
+          </p>
+          <p className="text-gray-300 leading-relaxed">
+            He is a graduate of the College of Technology, holding qualifications in
+            Engineering Draftsmanship and Construction Technology in Civil Engineering. As a
+            professionally licensed Drafting Technician, registered in multiple states,
+            Farsath brings both technical skill and regulatory knowledge to every project. He
+            has extensive experience in drafting for a variety of building materials,
+            including steel, concrete, masonry, wood, and cold-formed metal framing.
+          </p>
         </div>
 
-        {/* Other Team Members */}
-        <h3 className="text-3xl font-bold mb-8 text-center">Our Team</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
-          {teamMembers.slice(1).map((member, index) => (
-            <div key={index} className="flex flex-col items-center">
+        <div className="w-full md:w-[280px] flex-shrink-0">
+          <Image
+            src="/images/team/farsath.png"
+            alt="Farsath Abdullah"
+            width={500}
+            height={500}
+            className="rounded-lg shadow-xl object-cover w-full h-auto"
+          />
+        </div>
+      </div>
+
+      {/* Team Members */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
+        {members.map((member, index) => (
+          <div key={index} className="flex flex-col items-center justify-center">
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#e2b63d] mb-4 shadow-md">
               <Image
                 src={member.image}
-                width={200}
-                height={200}
                 alt={member.name}
-                className="rounded-full"
+                width={128}
+                height={128}
+                className="object-cover w-full h-full"
               />
-              <p className="mt-4 font-semibold">{member.name}</p>
-              <p className="text-sm text-gray-300">{member.role}</p>
             </div>
-          ))}
-        </div>
+            <h4 className="text-lg font-semibold text-white">{member.name}</h4>
+            <p className="text-sm text-gray-400">{member.title}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
