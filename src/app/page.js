@@ -31,7 +31,7 @@ export default function Home() {
         <Projects />
       </section>
 
-      <section className="bg-gray-100 rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full">
+      <section className="bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full">
         <EmailSection />
       </section>
 
