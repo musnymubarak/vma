@@ -11,14 +11,14 @@ const projectsData = [
     title: "E-Commerce website",
     description: "An advanced e-commerce platform with product catalog, cart, and payment gateway.",
     image: "/images/projects/1.png",
-    tag: ["All", "Head Drafting"],
+    tag: ["All", "CAD Drafting"],
   },
   {
     id: 3,
     title: "My Portfolio Website",
     description: "Personal site built with Next.js and Tailwind to showcase my skills and projects.",
     image: "/images/projects/3.png",
-    tag: ["All", "Head Drafting"],
+    tag: ["All", "CAD Drafting"],
   },
   {
     id: 2,
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
       </h3>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag name="All" onClick={handleTagChange} isSelected={tag === "All"} />
-        <ProjectTag name="Head Drafting" onClick={handleTagChange} isSelected={tag === "Head Drafting"} />
+        <ProjectTag name="CAD Drafting" onClick={handleTagChange} isSelected={tag === "Head Drafting"} />
         <ProjectTag name="3D Modelling" onClick={handleTagChange} isSelected={tag === "3D Modelling"} />
       </div>
 

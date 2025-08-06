@@ -82,8 +82,8 @@ const Services = () => {
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {/* Service 1 */}
         <div className="bg-[#263039] pt-0 px-10 pb-10 rounded-xl shadow-xl hover:scale-105 transition-transform duration-300 hover:bg-gray-700 cursor-pointer">
-          <Slideshow images={headDraftingImages} alt="Head Drafting" />
-          <h4 className="text-3xl font-bold mb-4 text-white">Head Drafting</h4>
+          <Slideshow images={headDraftingImages} alt="CAD Drafting" />
+          <h4 className="text-3xl font-bold mb-4 text-white">CAD Drafting</h4>
           <p className="text-lg text-gray-300 leading-relaxed">
             Detailed 2D drafting services for structural and architectural plans. Accurate, clear, and professionally formatted.
           </p>

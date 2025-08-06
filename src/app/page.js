@@ -17,35 +17,35 @@ export default function Home() {
 
       <section
         id="about"
-        className="scroll-mt-[120px] bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full"
+        className="scroll-mt-[120px] bg-white rounded-md py-8 px-4 sm:px-6 lg:py-16 lg:px-12 w-full"
       >
         <AboutMe />
       </section>
 
       <section
         id="team"
-        className="scroll-mt-[120px] bg-[#263039] rounded-none py-12 px-8 lg:py-16 lg:px-12 w-full"
+        className="scroll-mt-[120px] bg-[#263039] rounded-none py-8 px-4 sm:px-6 lg:py-16 lg:px-12 w-full"
       >
         <Team />
       </section>
 
       <section
         id="services"
-        className="scroll-mt-[120px] bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full"
+        className="scroll-mt-[120px] bg-white rounded-md py-8 px-4 sm:px-6 lg:py-16 lg:px-12 w-full"
       >
         <Services />
       </section>
 
       <section
         id="projects"
-        className="scroll-mt-[120px] bg-[#263039] rounded-none py-12 px-8 lg:py-16 lg:px-12 w-full"
+        className="scroll-mt-[120px] bg-[#263039] rounded-none py-8 px-4 sm:px-6 lg:py-16 lg:px-12 w-full"
       >
         <Projects />
       </section>
 
       <section
         id="contact"
-        className="scroll-mt-[120px] bg-white rounded-md py-12 px-8 lg:py-16 lg:px-12 w-full"
+        className="scroll-mt-[120px] bg-white rounded-md py-8 px-4 sm:px-6 lg:py-16 lg:px-12 w-full"
       >
         <EmailSection />
       </section>

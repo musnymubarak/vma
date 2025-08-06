@@ -11,9 +11,9 @@ const Footer = () => {
           <Image
             src="/images/lg.png"
             alt="Logo"
-            width={85}
-            height={85}
-            className="h-[155px] w-auto" // slightly increased from 70px
+            width={160}
+            height={160}
+            className="h-35 w-auto object-contain"
           />
         </Link>
         <p className="text-xs md:text-base text-slate-500 break-words">
