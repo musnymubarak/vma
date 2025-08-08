@@ -10,9 +10,14 @@ const Team = () => {
       image: "/images/team/musny.jpg",
     },
     {
+      name: "Jizan Farook",
+      title: "BIM Specialist",
+      image: "/images/team/jizan.jpg",
+    },
+    {
       name: "Shameer Cafoor",
       title: "Senior Drafter",
-      image: "/images/team/shameer.jpg",
+      image: "/images/team/shameer.png",
     },
     {
       name: "Afsan Siyath",
@@ -68,7 +73,7 @@ const Team = () => {
       </div>
 
       {/* Team Members */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
         {members.map((member, index) => (
           <div key={index} className="flex flex-col items-center justify-center">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#f0b41c] mb-4 shadow-md">
